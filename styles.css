@@ -1,16 +1,17 @@
 :root {
-  --maine-title-color: #212121;
-  --maine-text-color: #757575;
-  --accent-color: #2196f3;
+  --main-title-color: #b4ad9e;
+  --main-text-color: #626262;
+  --black-text-color: #000000;
+  --second-blac-color: #333333;
+  --accent-color: #f0f0f0;
   --primary-white-color: #ffffff;
-  --maine-background-color: #f5f4fa;
-  --second-backgroud-color: #2f303a;
-  --address-color: rgba(255, 255, 255, 0.6);
+  --maine-background-color: #f0f0f0;
+  --avatar-color: #cae5e0;
   
   --animation-time: 250ms;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-delay: 0ms;
-/*     
+  /*     
     // fonts
     $main-font-family: "Roboto", sans-serif;
     $secondary-font-family: "Raleway", sans-serif;
@@ -25,6 +26,23 @@
     $desktop: 1200px; */
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  font-family: inherit;
+  /* 1 */
+  font-size: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
 body {
   font-family: 'Playfair Display', serif;
   font-family: 'Ubuntu', sans-serif;
@@ -32,12 +50,24 @@ body {
   background-color: var(--primary-white-color);
 }
 
+header{
+  margin-top: 70px;
+}
+
+.header-container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 h1,
@@ -75,8 +105,8 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 100px;
+  padding-bottom: 0px;
 }
 
 .link {
@@ -91,12 +121,276 @@ img {
   cursor: pointer;
 }
 
-.background {
-  background-color: rgb(240, 240, 240);
-  position: absolute;
-  left: 0px;
-  top: 4928px;
-  width: 1200px;
-  height: 97px;
-  z-index: 303;
+.header-container{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.header-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-list-item{
+  display: flex;
+}
+
+.header-logo{
+    font-size: 30px;
+    font-family: "Ubuntu";
+    color: var(--black-text-color);
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: center;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  color: var(--main-text-color);
+  background-color: var(--accent-color);
+  border: 1px solid var(--black-text-color);
+}
+
+.header-list-item:not(:first-child){
+  margin-left: 100px;
+}
+
+.header-link {
+  font-size: 14px;
+  font-family: "PlayfairDisplay";
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  line-height: 1.714;
+  text-align: center;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--main-text-color);
+  background-color: var(--accent-color);
+}
+
+.photodiary-title {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  color: var(--main-title-color);
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.photodiary-under-title{
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--main-text-color);
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.photodiary-text{
+  color: var(--main-text-color);
+  margin-bottom: 25px;
+}
+
+.photodiary-bottom-text{
+  color: var(--main-title-color);
+  text-transform: uppercase;
+}
+
+
+.articles-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.articles-card-container{
+  min-height: 300px;
+}
+
+.articles-photo{
+  margin-bottom: 20px;
+}
+
+.articles-title{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-title-color);
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.articles-under-title{
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--main-text-color);
+  margin-bottom: 25px;
+}
+
+.articles-text{
+  color: var(--main-text-color);
+}
+
+.signup{
+  background-color: var(--accent-color);
+  padding-bottom: 100px;
+}
+
+.signup-title {
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--second-blac-color);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.signup-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-input{
+  padding-bottom: 10px;
+  border: none;
+  width: 397px;
+  border-bottom: 1px solid var(--second-blac-color);
+  background-color: transparent;
+  color: inherit;
+  outline: none
+  
+}
+
+.signup-lable{
+  position: relative;
+}
+
+.checkbox__icon{
+position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+  width: 25px;
+  height: 25px;
+  fill: var(--main-text-color);
+}
+
+.stories-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.stories-photo{
+  margin-bottom: 20px;
+}
+
+.stories-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-title-color);
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.stories-under-title{
+  margin-bottom: 25px;
+}
+
+.stories-under-title{
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--main-text-color);
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+.stories-text{
+  color: var(--main-text-color);
+}
+
+.stories-button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 162px;
+  height: 58px;
+  border-width: 1px;
+  border-color: rgb(98, 98, 98);
+  border-style: solid;
+  background-color: var(--primary-white-color);
+  cursor: pointer;
+  margin-bottom: 200px;
+}
+
+.stories-button:hover,
+.stories-button:focus {
+  background-color: var(--accent-color);
+}
+
+.stories-button-text{
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--main-text-color);
+  line-height: 1.2;
+}
+
+.main-footer{
+  height: 100px;
+  background-color: var(--accent-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container{
+  display: flex;
+}
+
+.policy-text{
+  margin-left: 100px;
+}
+
+.follow-text{
+  display: block;
+  margin-right: auto;
+}
+
+.follow-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.follow-icons-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.follow-text{
+  margin-right: 15px;
+  display: block;
+}
+
+.follow-item{
+  margin-right: 15px;
+}
+
+.follow-icon{
+  fill: var(--main-text-color);
+}
+
+.follow-icon:hover,
+.follow-icon:focus {
+  fill: var(--second-blac-color);
 }
