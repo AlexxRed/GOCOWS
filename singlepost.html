@@ -33,7 +33,6 @@
     <main>
         <section class="hero section">
             <div class="container hero-container">
-                <h1 class="hero-title">Header</h1>
                 <img src="./images/hero1x.jpg" alt="">
             </div>
         </section>
@@ -111,36 +110,36 @@
                         <ul class="list singlepost-social">
                             <li class="singlepost-social-item">
                                 <a class="link singlepost-social-link" href="">
-                                    <svg class="follow-icon" width="20" height="20">
+                                    <svg class="follow-icon" width="16" height="16">
                                         <use href="./images/svg/sprite.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="singlepost-social-item">
                                 <a class="link singlepost-social-link" href="">
-                                    <svg class="follow-icon" width="20" height="20">
-                                        <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                                    <svg class="follow-icon" width="16" height="16">
+                                        <use href="./images/svg/sprite.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="singlepost-social-item">
                                 <a class="link singlepost-social-link" href="">
-                                    <svg class="follow-icon" width="20" height="20">
-                                        <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                                    <svg class="follow-icon" width="16" height="16">
+                                        <use href="./images/svg/sprite.svg#icon-google-plus"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="singlepost-social-item">
                                 <a class="link singlepost-social-link" href="">
-                                    <svg class="follow-icon" width="20" height="20">
-                                        <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                                    <svg class="follow-icon" width="16" height="16">
+                                        <use href="./images/svg/sprite.svg#icon-tumblr"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="singlepost-social-item">
                                 <a class="link singlepost-social-link" href="">
-                                    <svg class="follow-icon" width="20" height="20">
-                                        <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                                    <svg class="follow-icon" width="16" height="16">
+                                        <use href="./images/svg/sprite.svg#icon-pinterest"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -152,36 +151,29 @@
         <section class="maybe-like section">
             <div class="container maybe-like-container">
                 <h2 class="maybe-like-title">you may also like</h2>
-                <div class="maybe-like-wrapper">
-                    <img class="maybe-like-photo" 
-                    srcset="
-                        ./images/Road @1x.jpg,
-                        ./images/Road @2x.jpg" 
-                        src="./images/Road @1x.jpg" 
-                        alt="music festival"
-                        width="274" height="182">
-                    <p class="maybe-like-wrapper-text">Cold winter days</p>
-                </div>
-                <div class="maybe-like-wrapper">
-                    <img class="maybe-like-photo" 
-                    srcset="
-                        ./images/Back @1x.jpg,
-                        ./images/Back @2x.jpg" 
-                        src="./images/Back @1x.jpg" 
-                        alt="music festival"
-                        width="274" height="182">
-                    <p class="maybe-like-wrapper-text">A day exploring the Alps</p>
-                </div>
-                
-                <div class="maybe-like-wrapper">
-                    <img class="maybe-like-photo" 
-                    srcset="
-                        ./images/Bridge @1x.jpg,
-                        ./images/Bridge @2x.jpg" 
-                        src="./images/Bridge @1x.jpg" 
-                        alt="music festival"
-                        width="274" height="182">
-                    <p class="maybe-like-wrapper-text">American dream</p>
+                <div class="maybe-like-box">
+                    <div class="maybe-like-wrapper">
+                        <img class="maybe-like-photo" srcset="
+                                            ./images/Road @1x.jpg,
+                                            ./images/Road @2x.jpg" src="./images/Road @1x.jpg" alt="music festival" width="274"
+                            height="182">
+                        <p class="maybe-like-wrapper-text">Cold winter days</p>
+                    </div>
+                    <div class="maybe-like-wrapper">
+                        <img class="maybe-like-photo" srcset="
+                                            ./images/Back @1x.jpg,
+                                            ./images/Back @2x.jpg" src="./images/Back @1x.jpg" alt="music festival" width="274"
+                            height="182">
+                        <p class="maybe-like-wrapper-text">A day exploring the Alps</p>
+                    </div>
+                    
+                    <div class="maybe-like-wrapper">
+                        <img class="maybe-like-photo" srcset="
+                                            ./images/Bridge @1x.jpg,
+                                            ./images/Bridge @2x.jpg" src="./images/Bridge @1x.jpg" alt="music festival" width="274"
+                            height="182">
+                        <p class="maybe-like-wrapper-text">American dream</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -193,43 +185,50 @@
                         <div class="comment-avatar-wrapper">
                             <img class="comment-avatar" src="./images/avatar 1@1x.jpg" alt="avatar">
                         </div>
-                        <p class="comment-name">John Doe</p>
-                        <p class="comment-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sed beatae amet autem
-                            necessitatibus voluptate voluptatum perferendis et libero maxime.</p>
-                        <p class="comment-aftertext">Reply</p>
+                        <div class="comment-text-block">
+                            <p class="comment-name">John Doe</p>
+                            <p class="comment-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sed beatae amet autem
+                            </p>
+                            <p class="comment-aftertext">Reply</p>
+                        </div>
                     </div>
                     <div class="comment-wrapper">
-                        <div class="comment-avatar-wrapper">
-                            <p class="comment-avatar-text">JD</p>
+                        <div class="comment-avatar-wrapper-notphoto">
+                            <div class="comment-avatar-text">JD</div>
                         </div>
-                        <p class="comment-name">Jane Doe</p>
-                        <p class="comment-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem Lorem, ipsum dolor.
-                        </p>
-                        <p class="comment-aftertext">Reply</p>
+                        <div class="comment-text-block">
+                            <p class="comment-name">Jane Doe</p>
+                            <p class="comment-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem Lorem, ipsum dolor.
+                            </p>
+                            <p class="comment-aftertext">Reply</p>
+                        </div>
                     </div>
 
-                    <div class="comment-form-wrapper">
-                        <p class="comment-avatar-text inform">JD</p>
+                    <div class="comment-wrapper">
+                        <div class="comment-avatar-wrapper-notphoto-form">
+                            <div class="comment-avatar-text">JD</div>
+                        </div>
+                        <form class="comment-form">
+                            <label class="comment-form-label" for="comment">
+                                <input class="comment-form-input" type="text" name="comment" placeholder="Join the discussion">
+                            </label>
+                        </form>
                     </div>
-                    <form class="comment-form">
-                        <label for="comment">
-                            <input type="text" name="comment" placeholder="Join the discussion">
-                        </label>
-                    </form>
+
                     <div class="comment-social-wrapper">
                         <p class="comments-title">Connected with</p>
-                        <ul class="list singlepost-social">
-                            <li class="singlepost-social-item">
-                                <a class="link singlepost-social-link" href="">
-                                    <svg class="follow-icon" width="20" height="20">
+                        <ul class="list comment-social-list">
+                            <li class="comment-social-item">
+                                <a class="link comment-social-link" href="">
+                                    <svg class="follow-icon comment-icon-footer" width="20" height="20">
                                         <use href="./images/svg/sprite.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="singlepost-social-item">
-                                <a class="link singlepost-social-link" href="">
-                                    <svg class="follow-icon" width="20" height="20">
+                            <li class="comment-social-item">
+                                <a class="link comment-social-link" href="">
+                                    <svg class="follow-icon comment-icon-footer" width="20" height="20">
                                         <use href="./images/svg/sprite.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
@@ -239,11 +238,6 @@
                 
             </div>
         </section>
-
-
-
-
-
 
 
     </main>
@@ -259,19 +253,19 @@
                 <ul class="list follow-icons-list">
                     <li class="follow-item">
                         <a class="follow link " href="">
-                            <svg class="follow-icon" width="20" height="20">
+                            <svg class="follow-icon" width="16" height="16">
                                 <use href="./images/svg/sprite.svg#icon-facebook"></use>
                             </svg>
                     </li>
                     <li class="follow-item">
                         <a class="follow link " href="">
-                            <svg class="follow-icon" width="20" height="20">
+                            <svg class="follow-icon" width="16" height="16">
                                 <use href="./images/svg/sprite.svg#icon-twitter"></use>
                             </svg>
                     </li>
                     <li class="follow-item">
                         <a class="follow link " href="">
-                            <svg class="follow-icon" width="20" height="20">
+                            <svg class="follow-icon" width="16" height="16">
                                 <use href="./images/svg/sprite.svg#icon-instagram"></use>
                             </svg>
                     </li>
