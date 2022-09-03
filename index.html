@@ -16,23 +16,23 @@
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./styles.css">
 
 </head>
 <body>
     <header>
-        <div>minimø</div>
-        <nav>
-            <a href="./index.html">minimø</a>
+        <nav class="container header-container">
+            <a class="link header-logo" href="./index.html">minimø</a>
         
-            <ul>
-                <li><a href="">lifestyle</a></li>
-                <li><a href="">photodiary</a></li>
-                <li><a href="">music</a></li>
-                <li><a href="">travel</a></li>
+            <ul class="list header-list">
+                <li class="header-list-item"><a class="link header-link" href="">lifestyle</a></li>
+                <li class="header-list-item"><a class="link header-link" href="singlepost.html">photodiary</a></li>
+                <li class="header-list-item"><a class="link header-link" href="">music</a></li>
+                <li class="header-list-item"><a class="link header-link" href="">travel</a></li>
             </ul>
         </nav>
     </header>
+            <main>
                 <section class="hero section">
                     <div class="container hero-container">
                         <h1 class="hero-title">Header</h1>
@@ -68,8 +68,8 @@
                                     ./images/music @2x.jpg"
                                 src="./images/music @1x.jpg" 
                                 alt="music festival" 
-                                width="370" 
-                                height="294">
+                                width="" 
+                                height="280">
                             <h3 class="articles-title">Lifestyle</h3>
                             <h2 class="articles-under-title">More than just a music festival</h2>
                             <p class="articles-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quo harum error distinctio ab
@@ -77,11 +77,11 @@
                         </div>
                         <div class="articles-card-container">
                             <img class="articles-photo" srcset="
-                                    ./images/music @1x.jpg,
-                                    ../images/music @2x.jpg" 
-                                    src="./images/music @1x.jpg"
+                                    ./images/Coffee @1x.jpg,
+                                    ./images/Coffee @2x.jpg" 
+                                    src="./images/Coffee @1x.jpg"
                                     alt="music festival"
-                                    width="370" height="294">
+                                    width="370" height="280">
                             <h3 class="articles-title">Lifestyle</h3>
                             <h2 class="articles-under-title">Life tastes better with coffee</h2>
                             <p class="articles-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quo harum error distinctio ab
@@ -89,11 +89,11 @@
                         </div>
                         <div class="articles-card-container">
                             <img class="articles-photo" srcset="
-                                    ./images/music @1x.jpg,
-                                    ../images/music @2x.jpg" 
-                                    src="./images/music @1x.jpg"
+                                    ./images/Bridge @1x.jpg,
+                                    ./images/Bridge @2x.jpg" 
+                                    src="./images/Bridge @1x.jpg"
                                     alt="music festival"
-                                width="370" height="294">
+                                width="370" height="280">
                             <h3 class="articles-title">photodiary</h3>
                             <h2 class="articles-under-title">American dream</h2>
                             <p class="articles-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quo harum error distinctio ab
@@ -101,11 +101,11 @@
                         </div>
                         <div class="articles-card-container">
                             <img class="articles-photo" srcset="
-                                    ./images/music @1x.jpg,
-                                    ../images/music @2x.jpg" 
-                                    src="./images/music @1x.jpg" 
+                                    ./images/Back @1x.jpg,
+                                    ./images/Back @2x.jpg" 
+                                    src="./images/Back @1x.jpg" 
                                     alt="music festival"
-                                width="370" height="294">
+                                width="370" height="280">
                             <h3 class="articles-title">photodiary</h3>
                             <h2 class="articles-under-title">A day exploring the Alps</h2>
                             <p class="articles-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quo harum error distinctio ab
@@ -134,24 +134,26 @@
                             <!-- <img src="./images/Rettangolo 4@1x.jpg" alt="Rettangolo 4"> -->
                             <img class="stories-photo"
                                 srcset="
-                                    ./images/music @1x.jpg,
-                                    ./images/music @2x.jpg"
-                                src="./images/music @1x.jpg" 
+                                    ./images/Field @1x.jpg,
+                                    ./images/Field @1x.jpg"
+                                src="./images/Field @1x.jpg" 
                                 alt="music festival" 
-                                width="370" 
-                                height="294">
+                                width="" 
+                                height="280">
                             <h3 class="stories-title">Lifestyle</h3>
                             <h2 class="stories-under-title">Top 10 song for running</h2>
                             <p class="stories-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quo harum error distinctio ab
                                 maxime dicta doloribus possimus voluptate eligendi tempora necessitatibus eaque sunt debitis.</p>
                         </div>
                         <div class="stories-card-container">
-                            <img class="stories-photo" srcset="
-                                    ./images/music @1x.jpg,
-                                    ../images/music @2x.jpg" 
-                                    src="./images/music @1x.jpg"
-                                    alt="music festival"
-                                    width="370" height="294">
+                            <img class="stories-photo"
+                                srcset="
+                                    ./images/Road @1x.jpg,
+                                    ./images/Road @2x.jpg"
+                                src="./images/Road @1x.jpg" 
+                                alt="music festival" 
+                                width="" 
+                                height="280">
                             <h3 class="stories-title">Lifestyle</h3>
                             <h2 class="stories-under-title">Cold winter days</h2>
                             <p class="stories-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quo harum error distinctio ab
@@ -162,6 +164,7 @@
                         <button class="stories-button">Load more</button>
                     </div>
                 </section>
+        </main>
     <footer class="main-footer">
         <div class="container footer-container">
             <div class="policy-container">
@@ -175,19 +178,19 @@
                     <li class="follow-item">
                         <a class="follow link " href="">
                             <svg class="follow-icon" width="20" height="20">
-                                <use href="./images/svg/facebook@1x.svg"></use>
+                                <use href="./images/svg/sprite.svg#icon-facebook"></use>
                             </svg>
                     </li>
                     <li class="follow-item">
                         <a class="follow link " href="">
                             <svg class="follow-icon" width="20" height="20">
-                                <use href="./images/svg/twitter@1x.svg"></use>
+                                <use href="./images/svg/sprite.svg#icon-twitter"></use>
                             </svg>
                     </li>
                     <li class="follow-item">
                         <a class="follow link " href="">
                             <svg class="follow-icon" width="20" height="20">
-                                <use href="./images/svg//instagram@1x.svg"></use>
+                                <use href="./images/svg/sprite.svg#icon-instagram"></use>
                             </svg>
                     </li>
                 </ul>

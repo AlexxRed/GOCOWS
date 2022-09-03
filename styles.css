@@ -90,3 +90,13 @@ img {
 .btn {
   cursor: pointer;
 }
+
+.background {
+  background-color: rgb(240, 240, 240);
+  position: absolute;
+  left: 0px;
+  top: 4928px;
+  width: 1200px;
+  height: 97px;
+  z-index: 303;
+}
