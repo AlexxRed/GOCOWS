@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
         
     <link rel="stylesheet" href="./styles.css">
 
@@ -31,11 +33,27 @@
                 </ul>
         </nav>
     </header>
-
             <main>
                 <section class="hero section">
                     <div class="header-container hero-container">
-                        <img src="./images/hero1x.jpg" alt="">
+                        <div class="slider">
+                            <div>
+                                <img 
+                                src="./images/sunny @1x.jpg" 
+                                width="1060"
+                                alt="two girls">
+                            </div>
+                            <div>
+                                <img src="./images/hump 1x.jpg" 
+                                width="1060"
+                                alt="two girls">
+                            </div>
+                            <div class="hero-image-wrapper">
+                                <img src="./images/hero1x.jpg"
+                                width="1060"
+                                alt="two girls">
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -63,8 +81,8 @@
                             <!-- <img src="./images/Rettangolo 4@1x.jpg" alt="Rettangolo 4"> -->
                             <img class="articles-photo"
                                 srcset="
-                                    ./images/music @1x.jpg,
-                                    ./images/music @2x.jpg"
+                                    ./images/music @1x.jpg 1x,
+                                    ./images/music @2x.jpg 2x"
                                 src="./images/music @1x.jpg" 
                                 alt="music festival" 
                                 width="" 
@@ -76,8 +94,8 @@
                         </div>
                         <div class="articles-card-container">
                             <img class="articles-photo" srcset="
-                                    ./images/Coffee @1x.jpg,
-                                    ./images/Coffee @2x.jpg" 
+                                    ./images/Coffee @1x.jpg 1x,
+                                    ./images/Coffee @2x.jpg 2x" 
                                     src="./images/Coffee @1x.jpg"
                                     alt="music festival"
                                     width="" height="280">
@@ -88,8 +106,8 @@
                         </div>
                         <div class="articles-card-container">
                             <img class="articles-photo" srcset="
-                                    ./images/Bridge @1x.jpg,
-                                    ./images/Bridge @2x.jpg" 
+                                    ./images/Bridge @1x.jpg 1x,
+                                    ./images/Bridge @2x.jpg 2x" 
                                     src="./images/Bridge @1x.jpg"
                                     alt="music festival"
                                 width="" height="280">
@@ -100,8 +118,8 @@
                         </div>
                         <div class="articles-card-container">
                             <img class="articles-photo" srcset="
-                                    ./images/Back @1x.jpg,
-                                    ./images/Back @2x.jpg" 
+                                    ./images/Back @1x.jpg 1x,
+                                    ./images/Back @2x.jpg 2x" 
                                     src="./images/Back @1x.jpg" 
                                     alt="music festival"
                                 width="" height="280">
@@ -133,8 +151,8 @@
                             <!-- <img src="./images/Rettangolo 4@1x.jpg" alt="Rettangolo 4"> -->
                             <img class="stories-photo"
                                 srcset="
-                                    ./images/Field @1x.jpg,
-                                    ./images/Field @1x.jpg"
+                                    ./images/Field @1x.jpg 1x,
+                                    ./images/Field @1x.jpg 2x"
                                 src="./images/Field @1x.jpg" 
                                 alt="music festival" 
                                 width="" 
@@ -147,8 +165,8 @@
                         <div class="stories-card-container">
                             <img class="stories-photo"
                                 srcset="
-                                    ./images/Road @1x.jpg,
-                                    ./images/Road @2x.jpg"
+                                    ./images/Road @1x.jpg 1x,
+                                    ./images/Road @2x.jpg 2x"
                                 src="./images/Road @1x.jpg" 
                                 alt="music festival" 
                                 width="" 
@@ -196,5 +214,9 @@
             </div>
         </div>
     </footer>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/slick.js"></script>
 </body>
 </html>

@@ -11,6 +11,9 @@
   --animation-time: 250ms;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-delay: 0ms;
+
+  --font-ubuntu:'Ubuntu';
+  --font-playfair:"PlayfairDisplay";
   /*     
     // fonts
     $main-font-family: "Roboto", sans-serif;
@@ -44,7 +47,6 @@ input[type="text"] {
 }
 
 body {
-  font-family: 'Playfair Display', serif;
   font-family: 'Ubuntu', sans-serif;
   color: var(--maine-text-color);
   background-color: var(--primary-white-color);
@@ -121,6 +123,15 @@ img {
   cursor: pointer;
 }
 
+/* .slider{
+  max-width: 1062px;
+  height: 509px;
+} */
+.hero-image-wrapper{
+  width: 1060px;
+  height: 510px;
+}
+
 .header-container{
   display: flex;
   /* justify-content: space-between; */
@@ -140,7 +151,7 @@ img {
 
 .header-logo{
     font-size: 30px;
-    font-family: "Ubuntu";
+    font-family: var(--font-playfair);
     color: var(--black-text-color);
     text-transform: uppercase;
     line-height: 0.8;
@@ -160,7 +171,7 @@ img {
 
 .header-link {
   font-size: 14px;
-  font-family: "PlayfairDisplay";
+  font-family: var(--font-playfair);
   color: var(--main-text-color);
   text-transform: uppercase;
   line-height: 1.714;
@@ -175,7 +186,7 @@ img {
 
 .photodiary-title {
   font-size: 14px;
-  font-family: "Ubuntu";
+  font-family: var(--font-ubuntu);
   font-weight: 400;
   color: var(--main-title-color);
   text-transform: uppercase;
@@ -184,6 +195,7 @@ img {
 }
 
 .photodiary-under-title{
+  font-family: var(--font-playfair);
   font-size: 30px;
   font-weight: 400;
   color: var(--main-text-color);
@@ -192,6 +204,7 @@ img {
 }
 
 .photodiary-text{
+  font-family: var(--font-playfair);
   color: var(--main-text-color);
   margin-bottom: 25px;
 }
@@ -226,6 +239,7 @@ img {
 }
 
 .articles-under-title{
+  font-family: var(--font-playfair);
   font-size: 30px;
   font-weight: 400;
   color: var(--main-text-color);
@@ -233,6 +247,7 @@ img {
 }
 
 .articles-text{
+  font-family: var(--font-playfair);
   color: var(--main-text-color);
 }
 
@@ -242,6 +257,7 @@ img {
 }
 
 .signup-title {
+  font-family: var(--font-playfair);
   font-size: 30px;
   font-weight: 300;
   color: var(--second-blac-color);
@@ -251,12 +267,14 @@ img {
 }
 
 .signup-form{
+  font-family: var(--font-playfair);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .signup-input{
+  font-family: var(--font-playfair);
   padding-bottom: 10px;
   border: none;
   width: 397px;
@@ -294,6 +312,7 @@ position: absolute;
 }
 
 .stories-title {
+  font-family: var(--font-playfair);
   font-size: 14px;
   font-weight: 400;
   color: var(--main-title-color);
@@ -302,6 +321,7 @@ position: absolute;
 }
 
 .stories-under-title{
+  font-family: var(--font-playfair);
   margin-bottom: 25px;
 }
 
@@ -313,10 +333,12 @@ position: absolute;
   margin-bottom: 25px;
 }
 .stories-text{
+  font-family: var(--font-playfair);
   color: var(--main-text-color);
 }
 
 .stories-button{
+  font-family: var(--font-playfair);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -343,6 +365,7 @@ position: absolute;
 }
 
 .main-footer{
+  font-family: var(--font-playfair);
   height: 100px;
   background-color: var(--accent-color);
   width: 100%;
@@ -350,12 +373,17 @@ position: absolute;
   align-items: center;
 }
 
+
 .footer-container{
   display: flex;
 }
 
 .policy-text{
   margin-left: 100px;
+}
+
+.policy-value{
+  margin-left: 15px;
 }
 
 .follow-text{
@@ -400,7 +428,7 @@ footer.follow-icon-footer{
 
 .singlepost-title {
   font-size: 14px;
-  font-family: "Ubuntu";
+  font-family: var(--font-ubuntu);
   font-weight: 400;
   color: var(--main-title-color);
   text-transform: uppercase;
@@ -409,6 +437,7 @@ footer.follow-icon-footer{
 }
 
 .singlepost-under-title {
+  font-family: var(--font-playfair);
   font-size: 30px;
   font-weight: 400;
   color: var(--main-text-color);
@@ -417,15 +446,17 @@ footer.follow-icon-footer{
 }
 
 .singlepost-text {
+  font-family: var(--font-playfair);
   color: var(--main-text-color);
   margin-bottom: 25px;
 }
 
 .singlepost-paragraph{
   color: var(--main-text-color);
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 .singlepost-bottom-text {
+  font-family: var(--font-playfair);
   color: var(--main-text-color);
     margin-bottom: 50px;
 }
@@ -434,7 +465,9 @@ footer.follow-icon-footer{
   margin-bottom: 50px;
 }
 
+
 .singlepost-quote{
+  font-family: var(--font-playfair);
   display: block;
   padding: 0px 20px;
   color: var(--main-text-color);
@@ -496,6 +529,7 @@ footer.follow-icon-footer{
 }
 
 .maybe-like-wrapper-text{
+  font-family: var(--font-playfair);
   font-size: 20px;
   color: var(--main-text-color);
   line-height: 1.2;
@@ -528,6 +562,7 @@ footer.follow-icon-footer{
 }
 
 .comment-name{
+  font-family: var(--font-playfair);
   font-size: 14px;
   font-weight: bold;
   line-height: 1.2;
@@ -539,7 +574,7 @@ footer.follow-icon-footer{
   height: 70px;
   border-radius: 50%;
   background-color: var(--avatar-color);
-  margin-right: 35px;
+  margin-right: 45px;
 }
 
 .comment-avatar-text{
@@ -554,6 +589,7 @@ footer.follow-icon-footer{
 }
 
 .comment-text{
+  font-family: var(--font-playfair);
   color: var(--main-text-color);
   margin-bottom: 15px;
 }
@@ -573,12 +609,19 @@ footer.follow-icon-footer{
 }
 
 .comment-form{
-  margin-left: 30px;
+  text-transform: uppercase;
   width: 100%;
   margin-bottom: 30px;
 }
 
+.comment-form-label{
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
 .comment-form-input{
+  text-transform: uppercase;
+  color: var(--main-text-color);
   padding-left: 30px;
   display: block;
   width: 100%;
@@ -595,6 +638,7 @@ footer.follow-icon-footer{
   width: 73px;
   height: 70px;
   background-color: var(--accent-color);
+  margin-right: 45px;
 }
 
 .comment-social-wrapper{
@@ -607,7 +651,7 @@ footer.follow-icon-footer{
   display: flex;
 }
 
-.comments-title{
+.connected{
   display: flex;
   align-items: center;
   justify-content: center;
